@@ -7,9 +7,21 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 50px;
-    
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 96%;
+    height: 70px;
+    margin-top: 0;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px 40px;
+    border-bottom: 1px solid grey;
+    margin-left: 0;
+    margin-right: 0;
 }
+
 .bar i{
     font-size: 25px;
 }
@@ -24,34 +36,59 @@ header{
     color: rgb(229, 222, 222);
     align-items: center;
     padding: 30px;
+    padding-bottom: 40px;
     position: absolute;
-    left: 100px;
-}
-.close{
+    right: 0;
     
-    right: -70px;
+    top: 100px;
+    z-index: 1;
+    height: calc(100vh - 100px);
+    flex-direction: column;
+    transition:right 0.5s linear;
+    background: rgba(0,0,0,0.7);
 }
-.open{
-    right: 70px;
+
+.close{
+
+    right: -500px;
+}
+#open{
+    right: 0;
 }
 a{
     color:  rgb(29, 29, 65);
     text-decoration: none;
 }
 a:hover{
-    background-color: grey;
+    background-color: rgb(187, 181, 181);
+}
+.menu a:hover{
+background-color: rgb(194, 187, 187);
+border-radius: 8px;
+
 }
 a p:hover{
-    background-color: grey;
+    background-color: rgb(194, 188, 188);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
 .menu{
     display: none;
     color: rgb(29, 29, 65);
     font-weight: bold;
    font-size: 17px;
+   padding: 0 40px;
 }
 .menu span{
-    padding-right: 30px;
+
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .img1{
     width: 400px;
@@ -70,6 +107,12 @@ a p:hover{
     font-weight: bold;
     color: rgb(29, 29, 65);
 }
+.latest{
+    font-size: 40px;
+    font-weight: bold;
+    
+    padding: 80px 40px;
+}
 .header2{
     color: rgb(29, 29, 65);
     display: block;
@@ -77,6 +120,8 @@ a p:hover{
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    margin-top: 200px;
+    margin-bottom: 80px;
 }
 .blogimg{
     display: flex;
