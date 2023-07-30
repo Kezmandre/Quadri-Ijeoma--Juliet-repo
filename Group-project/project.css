@@ -1,8 +1,7 @@
 /* body default setting */
 * {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
-  overflow-x: hidden;
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -288,6 +287,7 @@ ul{
   height: 35px;
   width: 200px;
   border: 2px;
+  padding: 10px;
 }
 
 .flexed > button a {
@@ -334,9 +334,12 @@ ul{
 
 .landing h4 {
   font-size: 22px;
-  line-height: 45px;
   font-weight: 600;
   padding: 10px 20px;
+}
+
+.landing ul li{
+  padding: 5px 0;
 }
 
 .landing a {
@@ -363,7 +366,12 @@ ul{
 
 /* Media query */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
+
+  main{
+    overflow: hidden;
+  }
+
 
     .section1 {
       height: auto;
@@ -422,8 +430,11 @@ ul{
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 500px;
-        left: 15%;
+        top: 600px;
+        /* left: 12%; */
+        left: 0;
+        right: 0;
+        gap: 30px;
         
       
         
@@ -435,9 +446,19 @@ ul{
         gap: 5px;
     }
 
+      .image1and2{
+        width: 250px;
+      }
+
+      .image4and5{
+        width: 250px;
+      }
+      .image3{
+        width: 320px;
+      }
 
     .text-part {
-      margin-top: 500px;
+      margin-top: 550px;
     }
 
     .text-part h2{                    /* space for section 2 */
@@ -475,14 +496,14 @@ ul{
     }
 
     .our-numbers h1{
-        font-size: 50px;
+        font-size: 35px;
         font-weight: 100;
          margin: 0 50px;
     }
 
     .time-flexed{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         gap: 25px;
         margin-top: 15px;
     }
@@ -554,7 +575,7 @@ ul{
         padding-left: 20px;
     }
     .value-text p{
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 0.5px;
         padding: 20px 0 20px 20px;
         line-height: 35px;
@@ -567,7 +588,7 @@ ul{
    }
 
    .footer-first h2{
-    font-size: 65px;
+    font-size: 55px;
     margin: 90px;
     font-weight: 100;
    }
@@ -600,11 +621,17 @@ ul{
    }
 
    .logo-text{
-    width: 25%;
+    width: 28%;
+   }
+
+   .logo-text a{
+    font-size: 18px;
    }
 
    .logo-text p{
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 80px;
+    line-height: 28px;
    }
 
    .logo-text img{
@@ -612,7 +639,7 @@ ul{
    }
 
     .landing ul li{
-      padding: 30px 0;
+      padding: 20px 0;
     }
 
     .landing ul li a{
