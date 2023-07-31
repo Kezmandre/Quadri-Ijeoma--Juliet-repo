@@ -17,16 +17,18 @@
             <a href="home.html"><span>Product</span></a>
             <a href="#"><span>Services</span></a>
             <a href="about.html"><span>About</span></a>
-            <a href="#"><button class="btn">Log In</button></span></a>
+            <button class="btn">Log In</button>
           </div>
           <div class="bar">
+            <a href="javascript:void(0)" class="icon" onclick="myFunction()">
             <i class="fa-solid fa-bars" style="padding-right: 70px;"></i>
-            <!-- <div class="sidebar" id="sidebar">
-              <p><i class="fa-solid fa-x" id="close"></i></p>
-              <p>Product</p>
-              <p>Services</p>
-              <p>About</p>
-              <p><button class="btn" style="color: green;">login</button></p> -->
+          </a>
+
+             <div class="sidebar" id="links">
+              <a href="home.html">Product</a>
+              <a href="#">Services</a>
+              <a href="about.html">About</a>
+              <!-- <p><button class="btn" style="color: green;">login</button></p>  -->
             </div>
           </div>
         </header>
@@ -46,7 +48,10 @@
               <p class="pitch">
                 Pitch termsheet backing validation focus release
               </p>
-              <p><img src="../Assets/Assets/blog-news-person-1.png" alt="img" class="" />  Chandler Bing</p>
+              <span id="Chan">
+              <img src="../Assets/Assets/blog-news-person-1.png" alt="img" class=""/> 
+              <p>Chandler Bing</p>
+            </span>
             </div>
           </div>
         </div>
@@ -117,7 +122,7 @@
   
           <!-- img5 -->
           <div class="content2">
-            <img src="../Assets/Assets/about-grid-img-5.png" alt="img2" class="" />
+            <img src="../Assets/Assets/blog-news-grid-5.png" alt="img2" class=""/>
             <p class="content1">
               <span style="font-weight: bold">Category</span>
               <span style="color: grey">November 22, 2021</span>
@@ -209,5 +214,6 @@
           
         </div>
       </footer>
+      <script src="../JAVASCRIPT/home.js"></script>
 </body>
 </html>
